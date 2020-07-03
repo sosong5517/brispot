@@ -1,0 +1,13 @@
+NODE_ENV=dev
+APP_NAME=pmobi
+APP_PORT=3898
+LOG_PATH=../Log
+LOG_LEVEL=debug
+
+DB_TYPE=postgres
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=123456
+DB_NAME=MY-BRI
+SECRET_KEY=thinkpad
