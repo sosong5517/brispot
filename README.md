@@ -28,7 +28,7 @@ $ npm install
 
 node dbMigrations
 
-```sh
+
 
 
 $ npm start
