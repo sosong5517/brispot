@@ -22,8 +22,15 @@ $ npm install
 ```
 
 **Starting the application**
-node dbMigrations
+
 ```sh
+
+
+node dbMigrations
+
+```sh
+
+
 $ npm start
 ```
 
