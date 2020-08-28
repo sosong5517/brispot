@@ -6,11 +6,10 @@ class EmployeeService {
     async getAllEmployee() {
         let result;
         try {
-            // result = await Product.findAll();
             result = await Employee.findAll();
         } catch (e) {
             logEvent.emit('APP-ERROR', {
-                logTitle: 'GET-PRODUCT-SERVICE-FAILED',
+                logTitle: 'GET-EMPLOYEE-SERVICE-FAILED',
                 logMessage: e
             });
             throw new Error(e);
@@ -25,7 +24,7 @@ class EmployeeService {
             result = await Employee.findAndCountAll({offset: Number(offset), limit: Number(limit)});
         } catch (e) {
             logEvent.emit('APP-ERROR', {
-                logTitle: 'GET-PRODUCT-SERVICE-FAILED',
+                logTitle: 'GET-EMPLOYEE-SERVICE-FAILED',
                 logMessage: e
             });
             throw new Error(e);
